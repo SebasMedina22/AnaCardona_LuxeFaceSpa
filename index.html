@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Cardona Luxe Face Spa - Rituales faciales, hidrataciones, limpiezas y cuidados post quirúrgicos en un ambiente boutique."
+    />
+    <title>Cardona | Luxe Face Spa</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600&family=Manrope:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Saltar al contenido principal</a>
+
+    <div class="accessibility-panel" aria-label="Controles de accesibilidad">
+      <span>Accesibilidad:</span>
+      <button type="button" data-action="font-decrease" aria-label="Reducir tamaño de letra">
+        A-
+      </button>
+      <button type="button" data-action="font-increase" aria-label="Aumentar tamaño de letra">
+        A+
+      </button>
+      <button type="button" data-action="contrast-toggle" aria-label="Activar alto contraste">
+        Contraste
+      </button>
+    </div>
+
+    <header class="hero" id="inicio">
+      <nav class="main-nav">
+        <div class="brand">
+          <span>Cardona</span>
+          <small>Ana · Luxe Face Spa</small>
+        </div>
+        <button class="nav-toggle" aria-expanded="false" aria-controls="nav-menu">
+          <span></span><span></span><span></span>
+        </button>
+        <ul id="nav-menu">
+          <li><a href="#paquetes">Paquetes</a></li>
+          <li><a href="#servicios">Servicios</a></li>
+          <li><a href="#perfil">Perfil de Ana</a></li>
+          <li><a href="#testimonios">Testimonios</a></li>
+          <li><a href="#contacto">Contacto</a></li>
+        </ul>
+      </nav>
+
+      <div class="hero-content">
+        <p class="eyebrow">Bienestar holístico · Medellín</p>
+        <h1>Tu piel merece un ritual a medida</h1>
+        <p>
+          Protocolos de hidratación, limpiezas profundas y acompañamiento post quirúrgico diseñados
+          por Ana Cardona, especialista en cuidado facial.
+        </p>
+        <div class="hero-cta">
+          <a
+            class="btn primary"
+            href="https://wa.me/message/45OG5EF3PCVAC1"
+            target="_blank"
+            rel="noopener"
+          >
+            Agendar por WhatsApp
+          </a>
+          <a class="btn ghost" href="#catalogo-demo">Ver catálogo interactivo</a>
+        </div>
+      </div>
+    </header>
+
+    <main id="main">
+      <section class="section intro" id="catalogo-demo">
+        <div class="intro-copy">
+          <h2>Un vistazo al nuevo catálogo digital</h2>
+          <p>
+            Esta versión demo replica el look & feel del PDF original, mantiene la paleta rosa,
+            negro y blanco y añade bloques desplegables para aparatología, cuidados y beneficios.
+            Todo el contenido es editable y se conecta con datos estructurados.
+          </p>
+          <ul>
+            <li>Secciones separadas para paquetes Signature y servicios individuales.</li>
+            <li>Componentes accesibles con navegación por teclado.</li>
+            <li>Listo para publicar en Netlify con HTTPS automático.</li>
+          </ul>
+        </div>
+        <div class="intro-card">
+          <p>Estado del proyecto</p>
+          <strong>Cascarón + data mock</strong>
+          <p class="status">Listo para refinar cuando recibamos textos finales.</p>
+        </div>
+      </section>
+
+      <section class="section" id="paquetes">
+        <div class="section-heading">
+          <p class="eyebrow">Paquetes signature</p>
+          <h2>Combos favoritos</h2>
+          <p>Ideal para clientas que buscan resultados integrales en una sola sesión.</p>
+        </div>
+        <div class="cards-grid" id="packages-grid"></div>
+      </section>
+
+      <section class="section" id="servicios">
+        <div class="section-heading">
+          <p class="eyebrow">Servicios individuales</p>
+          <h2>Explora cada ritual</h2>
+          <p>
+            Cada tarjeta despliega aparatología, recomendaciones y contraindicaciones para tomar
+            decisiones informadas antes de agendar.
+          </p>
+        </div>
+        <div class="service-groups" id="service-groups"></div>
+      </section>
+
+      <section class="section profile" id="perfil">
+        <div class="profile-media">
+          <div class="profile-photo" aria-hidden="true"></div>
+        </div>
+        <div class="profile-copy">
+          <p class="eyebrow">Sobre Ana Cardona</p>
+          <h2>Experta en limpiezas faciales y protocolos personalizados</h2>
+          <p>
+            Bio, certificaciones y reconocimientos se agregarán aquí. El bloque ya contempla
+            espacio para estudios, membresías y CTA a redes sociales.
+          </p>
+          <ul>
+            <li>Especialista en cuidado facial con más de 6 años de experiencia clínica.</li>
+            <li>Certificaciones en aparatología avanzada, drenaje linfático y post operatorio.</li>
+            <li>Metodología basada en evaluaciones previas y seguimiento post tratamiento.</li>
+          </ul>
+          <div class="profile-links">
+            <a
+              class="btn primary"
+              href="https://wa.me/message/45OG5EF3PCVAC1"
+              target="_blank"
+              rel="noopener"
+            >
+              Reservar diagnóstico
+            </a>
+            <a class="btn ghost" href="https://www.instagram.com/" target="_blank" rel="noopener">
+              Instagram
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <section class="section testimonials" id="testimonios">
+        <div class="section-heading">
+          <p class="eyebrow">Confianza</p>
+          <h2>Testimonios (placeholder)</h2>
+          <p>Activaremos este carrusel cuando recibamos reseñas reales.</p>
+        </div>
+        <div class="testimonials-track" id="testimonials-track"></div>
+      </section>
+
+      <section class="section gallery" id="galeria">
+        <div class="section-heading">
+          <p class="eyebrow">Ambiente</p>
+          <h2>Galería visual</h2>
+          <p>Reemplaza estas imágenes libres por tus propias fotos o videos cortos.</p>
+        </div>
+        <div class="gallery-grid" id="gallery-grid"></div>
+      </section>
+
+      <section class="section contact" id="contacto">
+        <div class="contact-card">
+          <p class="eyebrow">Contacto</p>
+          <h2>Agenda tu visita</h2>
+          <ul>
+            <li>
+              WhatsApp Business:
+              <strong><a href="https://wa.me/message/45OG5EF3PCVAC1">Inicia chat directo</a></strong>
+            </li>
+            <li>Correo electrónico: <strong>hola@cardonaluxespa.com</strong></li>
+            <li>Dirección: <strong>Por definir</strong></li>
+            <li>Horarios: <strong>Lunes a sábado · 9:00 a.m. - 7:00 p.m.</strong></li>
+          </ul>
+          <div class="contact-links">
+            <a
+              class="btn primary"
+              href="https://wa.me/message/45OG5EF3PCVAC1"
+              target="_blank"
+              rel="noopener"
+            >
+              Escribir ahora
+            </a>
+            <a class="btn ghost" href="mailto:hola@cardonaluxespa.com">Enviar correo</a>
+          </div>
+        </div>
+        <div class="map-placeholder" role="img" aria-label="Mapa en espera de insertar iframe">
+          <p>Mapa próximo</p>
+          <small>Inserta aquí el iframe de Google Maps cuando definamos la dirección.</small>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>© <span id="year"></span> Cardona Luxe Face Spa. Todos los derechos reservados.</p>
+      <p class="legal">
+        Política de datos y consentimientos disponibles al momento de publicación final.
+      </p>
+    </footer>
+
+    <a
+      class="whatsapp-fab"
+      href="https://wa.me/message/45OG5EF3PCVAC1"
+      target="_blank"
+      rel="noopener"
+      aria-label="Agendar cita por WhatsApp"
+    >
+      Agendar por WhatsApp
+    </a>
+
+    <script type="module" src="main.js"></script>
+  </body>
+</html>
+
