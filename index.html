@@ -33,17 +33,29 @@
     </div>
 
     <header class="hero" id="inicio">
-      <nav class="main-nav">
-        <div class="brand">
-          <span>Cardona</span>
-          <small>Ana · Luxe Face Spa</small>
-        </div>
-        <button class="nav-toggle" aria-expanded="false" aria-controls="nav-menu">
+      <span class="hero-watermark" aria-hidden="true">bienestar</span>
+      <nav class="main-nav" aria-label="Navegación principal">
+        <a class="brand" href="index.html" aria-label="Ir al inicio">
+          <img
+            src="images/logo-ana-luxe-face-spa.png"
+            alt="Logo de Ana Cardona · Luxe Face Spa"
+            width="200"
+            height="52"
+            decoding="async"
+          />
+        </a>
+        <button
+          class="nav-toggle"
+          type="button"
+          aria-expanded="false"
+          aria-controls="nav-menu"
+          aria-label="Abrir menú"
+        >
           <span></span><span></span><span></span>
         </button>
         <ul id="nav-menu">
           <li><a href="#paquetes">Paquetes</a></li>
-          <li><a href="#servicios">Servicios</a></li>
+          <li><a href="servicios.html">Servicios</a></li>
           <li><a href="#perfil">Perfil de Ana</a></li>
           <li><a href="#testimonios">Testimonios</a></li>
           <li><a href="#contacto">Contacto</a></li>
@@ -51,11 +63,11 @@
       </nav>
 
       <div class="hero-content">
-        <p class="eyebrow">Bienestar holístico · Medellín</p>
-        <h1>Tu piel merece un ritual a medida</h1>
+        <p class="eyebrow">Cosmetología Avanzada - Medellín</p>
+        <h1>Belleza que nace del cuidado</h1>
         <p>
-          Protocolos de hidratación, limpiezas profundas y acompañamiento post quirúrgico diseñados
-          por Ana Cardona, especialista en cuidado facial.
+          Protocolos de limpieza facial, hidratación, acné, pigmentación, anti age, acompañamiento
+          post quirurgico y relajación.
         </p>
         <div class="hero-cta">
           <a
@@ -74,30 +86,37 @@
     <main id="main">
       <section class="section intro" id="catalogo-demo">
         <div class="intro-copy">
-          <h2>Un vistazo al nuevo catálogo digital</h2>
-          <p>
-            Esta versión demo replica el look & feel del PDF original, mantiene la paleta rosa,
-            negro y blanco y añade bloques desplegables para aparatología, cuidados y beneficios.
-            Todo el contenido es editable y se conecta con datos estructurados.
-          </p>
+          <h2>Lo que encontrarás aquí:</h2>
+          <p>nuestros servicios, tratamientos y acompañamientos no invasivos faciales</p>
           <ul>
-            <li>Secciones separadas para paquetes Signature y servicios individuales.</li>
-            <li>Componentes accesibles con navegación por teclado.</li>
-            <li>Listo para publicar en Netlify con HTTPS automático.</li>
+            <li>Limpiezas</li>
+            <li>Hidrataciones</li>
+            <li>Tratamientos</li>
+            <li>Spa</li>
           </ul>
         </div>
         <div class="intro-card">
-          <p>Estado del proyecto</p>
-          <strong>Cascarón + data mock</strong>
-          <p class="status">Listo para refinar cuando recibamos textos finales.</p>
+          <p>Agenda rápida</p>
+          <ul>
+            <li>Atención en Medellín</li>
+            <li>Procedimientos no invasivos</li>
+            <li>Enfoque personalizado</li>
+          </ul>
+          <a
+            class="btn primary"
+            href="https://wa.me/message/45OG5EF3PCVAC1"
+            target="_blank"
+            rel="noopener"
+          >
+            Agendar por WhatsApp
+          </a>
         </div>
       </section>
 
       <section class="section" id="paquetes">
         <div class="section-heading">
-          <p class="eyebrow">Paquetes signature</p>
+          <p class="eyebrow">Paquetes disponibles</p>
           <h2>Combos favoritos</h2>
-          <p>Ideal para clientas que buscan resultados integrales en una sola sesión.</p>
         </div>
         <div class="cards-grid" id="packages-grid"></div>
       </section>
@@ -105,31 +124,64 @@
       <section class="section" id="servicios">
         <div class="section-heading">
           <p class="eyebrow">Servicios individuales</p>
-          <h2>Explora cada ritual</h2>
-          <p>
-            Cada tarjeta despliega aparatología, recomendaciones y contraindicaciones para tomar
-            decisiones informadas antes de agendar.
-          </p>
+          <h2>Explora cada servicio</h2>
+          <p>Una selección ligera de servicios para conocer el estilo de trabajo en cabina.</p>
         </div>
-        <div class="service-groups" id="service-groups"></div>
+        <div class="services-preview">
+          <article class="service-preview-card">
+            <h3>Limpiezas</h3>
+            <p>Rituales esenciales para limpiar y equilibrar la piel.</p>
+            <a class="card-cta" href="servicios.html#limpiezas">Ver más</a>
+          </article>
+          <article class="service-preview-card">
+            <h3>Hidrataciones</h3>
+            <p>Sesiones que restauran luminosidad y confort inmediato.</p>
+            <a class="card-cta" href="servicios.html#hidrataciones">Ver más</a>
+          </article>
+          <article class="service-preview-card">
+            <h3>Tratamientos</h3>
+            <p>Protocolos especializados para acné, anti-age y manchas.</p>
+            <a class="card-cta" href="servicios.html#tratamientos">Ver más</a>
+          </article>
+          <article class="service-preview-card">
+            <h3>Spa</h3>
+            <p>Experiencias sensoriales para relajar, drenar y renovar.</p>
+            <a class="card-cta" href="servicios.html#spa">Ver más</a>
+          </article>
+          <article class="service-preview-card">
+            <h3>Post quirúrgico</h3>
+            <p>Acompañamiento por fases con técnicas no invasivas.</p>
+            <a class="card-cta" href="servicios.html#post-quirurgico">Ver más</a>
+          </article>
+        </div>
+        <div class="services-actions">
+          <a class="btn primary" href="servicios.html">Ver todos los servicios</a>
+        </div>
       </section>
 
       <section class="section profile" id="perfil">
         <div class="profile-media">
-          <div class="profile-photo" aria-hidden="true"></div>
+          <img
+            class="profile-photo"
+            src="images/imagen-ana.jpg"
+            alt="Retrato de Ana Cardona"
+            width="320"
+            height="400"
+            loading="lazy"
+            decoding="async"
+          />
         </div>
         <div class="profile-copy">
-          <p class="eyebrow">Sobre Ana Cardona</p>
-          <h2>Experta en limpiezas faciales y protocolos personalizados</h2>
+          <h2>Sobre Ana Cardona</h2>
+          <p>Soy Ana Cardona, profesional en Cosmetología y Estética Integral.</p>
           <p>
-            Bio, certificaciones y reconocimientos se agregarán aquí. El bloque ya contempla
-            espacio para estudios, membresías y CTA a redes sociales.
+            Me especializo en tratamientos faciales, spa y postquirúrgicos, con un enfoque
+            personalizado y consciente con cada piel.
           </p>
-          <ul>
-            <li>Especialista en cuidado facial con más de 6 años de experiencia clínica.</li>
-            <li>Certificaciones en aparatología avanzada, drenaje linfático y post operatorio.</li>
-            <li>Metodología basada en evaluaciones previas y seguimiento post tratamiento.</li>
-          </ul>
+          <p>
+            Trabajo con procedimientos no invasivos, utilizando aparatología e insumos
+            profesionales, priorizando siempre la salud, el bienestar y la belleza natural
+          </p>
           <div class="profile-links">
             <a
               class="btn primary"
@@ -139,7 +191,12 @@
             >
               Reservar diagnóstico
             </a>
-            <a class="btn ghost" href="https://www.instagram.com/" target="_blank" rel="noopener">
+            <a
+              class="btn ghost"
+              href="https://www.instagram.com/luxefacespa_anacardona?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               Instagram
             </a>
           </div>

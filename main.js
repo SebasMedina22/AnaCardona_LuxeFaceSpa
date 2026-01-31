@@ -295,9 +295,9 @@ const servicesData = [
         summary: "Nutre profundamente y aporta luminosidad natural.",
         details: buildDetails({
           aparatologia: ["Mousse tibio de cacao", "Pinceles de seda", "Masaje con piedras calientes"],
-          cuidadosPrevios: ["Evitar perfumes fuertes antes", "No consumir chocolate previo al ritual"],
+          cuidadosPrevios: ["Evitar perfumes fuertes antes", "No consumir chocolate previo al servicio"],
           cuidadosPosteriores: ["No enjuagar la piel durante 4h", "Aplicar crema nutritiva al acostarse"],
-          candidatos: ["Pieles secas", "Amantes de rituales sensoriales"],
+          candidatos: ["Pieles secas", "Amantes de servicios sensoriales"],
           contraindicaciones: ["Alergia al cacao", "Dermatitis seborreica activa"],
           beneficios: ["Aporta antioxidantes", "Deja piel sedosa", "Eleva el ánimo"]
         })
@@ -406,6 +406,7 @@ const clamp = (value, min, max) => Math.min(Math.max(value, min), max);
 
 const renderPackages = () => {
   const container = document.getElementById("packages-grid");
+  if (!container) return;
   packagesData.forEach((pkg) => {
     const card = document.createElement("article");
     card.className = "package-card";
@@ -482,29 +483,46 @@ const createServiceCard = (service) => {
   return card;
 };
 
-const renderServices = () => {
-  const container = document.getElementById("service-groups");
+const slugify = (value) =>
+  value
+    .toLowerCase()
+    .normalize("NFD")
+    .replace(/[\u0300-\u036f]/g, "")
+    .replace(/[^a-z0-9]+/g, "-")
+    .replace(/(^-|-$)/g, "");
 
-  servicesData.forEach((group) => {
-    const groupEl = document.createElement("article");
-    groupEl.className = "service-group";
-    const groupTitle = document.createElement("h3");
-    groupTitle.textContent = group.category;
+const renderServicesCatalog = () => {
+  const container = document.getElementById("services-accordion");
+  if (!container) return;
+
+  servicesData.forEach((group, index) => {
+    const details = document.createElement("details");
+    details.className = "service-category";
+    details.id = slugify(group.category);
+    if (index === 0) details.open = true;
+
+    const summary = document.createElement("summary");
+    summary.innerHTML = `
+      <span class="service-category-title">${group.category}</span>
+      <span class="service-category-count">${group.services.length} servicios</span>
+    `;
+    details.appendChild(summary);
 
     const list = document.createElement("div");
-    list.className = "service-list";
+    list.className = "service-category-list";
 
     group.services.forEach((service) => {
       list.appendChild(createServiceCard(service));
     });
 
-    groupEl.append(groupTitle, list);
-    container.appendChild(groupEl);
+    details.appendChild(list);
+    container.appendChild(details);
   });
 };
 
 const renderTestimonials = () => {
   const container = document.getElementById("testimonials-track");
+  if (!container) return;
   testimonialsData.forEach((item) => {
     const card = document.createElement("article");
     card.className = "testimonial-card";
@@ -515,11 +533,12 @@ const renderTestimonials = () => {
 
 const renderGallery = () => {
   const container = document.getElementById("gallery-grid");
+  if (!container) return;
   galleryData.forEach((item) => {
     const figure = document.createElement("figure");
     figure.className = "gallery-card";
     figure.innerHTML = `
-      <img src="${item.src}" alt="${item.label}" loading="lazy" />
+      <img src="${item.src}" alt="${item.label}" loading="lazy" decoding="async" />
       <span>${item.label}</span>
     `;
     container.appendChild(figure);
@@ -575,7 +594,7 @@ const setYear = () => {
 
 const init = () => {
   renderPackages();
-  renderServices();
+  renderServicesCatalog();
   renderTestimonials();
   renderGallery();
   initAccessibilityControls();

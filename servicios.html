@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Catálogo completo de servicios de Ana Cardona · Luxe Face Spa."
+    />
+    <title>Servicios | Cardona · Luxe Face Spa</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600&family=Manrope:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Saltar al contenido principal</a>
+
+    <div class="accessibility-panel" aria-label="Controles de accesibilidad">
+      <span>Accesibilidad:</span>
+      <button type="button" data-action="font-decrease" aria-label="Reducir tamaño de letra">
+        A-
+      </button>
+      <button type="button" data-action="font-increase" aria-label="Aumentar tamaño de letra">
+        A+
+      </button>
+      <button type="button" data-action="contrast-toggle" aria-label="Activar alto contraste">
+        Contraste
+      </button>
+    </div>
+
+    <header class="hero hero--compact">
+      <nav class="main-nav" aria-label="Navegación principal">
+        <a class="brand" href="index.html" aria-label="Ir al inicio">
+          <img
+            src="images/logo-ana-luxe-face-spa.png"
+            alt="Logo de Ana Cardona · Luxe Face Spa"
+            width="200"
+            height="52"
+            decoding="async"
+          />
+        </a>
+        <button
+          class="nav-toggle"
+          type="button"
+          aria-expanded="false"
+          aria-controls="nav-menu"
+          aria-label="Abrir menú"
+        >
+          <span></span><span></span><span></span>
+        </button>
+        <ul id="nav-menu">
+          <li><a href="index.html#paquetes">Paquetes</a></li>
+          <li><a href="servicios.html" aria-current="page">Servicios</a></li>
+          <li><a href="index.html#perfil">Perfil de Ana</a></li>
+          <li><a href="index.html#testimonios">Testimonios</a></li>
+          <li><a href="index.html#contacto">Contacto</a></li>
+        </ul>
+      </nav>
+
+      <div class="hero-content">
+        <p class="eyebrow">Catálogo completo</p>
+        <h1>Servicios faciales y spa</h1>
+        <p>Explora cada categoría, con detalles de aparatología, cuidados y beneficios.</p>
+      </div>
+    </header>
+
+    <main id="main">
+      <section class="section services-catalog" id="servicios">
+        <div class="section-heading">
+          <p class="eyebrow">Navega por categoría</p>
+          <h2>Elige tu servicio ideal</h2>
+          <p>Haz clic en cada categoría para ver su contenido completo.</p>
+        </div>
+        <div class="services-chips" aria-label="Categorías de servicios">
+          <a class="chip" href="#limpiezas">Limpiezas</a>
+          <a class="chip" href="#hidrataciones">Hidrataciones</a>
+          <a class="chip" href="#tratamientos">Tratamientos</a>
+          <a class="chip" href="#spa">Spa</a>
+          <a class="chip" href="#post-quirurgico">Post quirúrgico</a>
+        </div>
+        <div class="services-accordion" id="services-accordion"></div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>© <span id="year"></span> Cardona Luxe Face Spa. Todos los derechos reservados.</p>
+      <p class="legal">
+        Política de datos y consentimientos disponibles al momento de publicación final.
+      </p>
+    </footer>
+
+    <a
+      class="whatsapp-fab"
+      href="https://wa.me/message/45OG5EF3PCVAC1"
+      target="_blank"
+      rel="noopener"
+      aria-label="Agendar cita por WhatsApp"
+    >
+      Agendar por WhatsApp
+    </a>
+
+    <script type="module" src="main.js"></script>
+  </body>
+</html>
