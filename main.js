@@ -1,27 +1,32 @@
 const packagesData = [
   {
-    name: "Glow Express",
-    price: "120.000",
-    duration: "75 minutos",
-    description: "Limpieza básica + hidratación profunda + mascarilla calmante.",
-    includes: ["Diagnóstico inicial", "Aparatología suave", "Protección final"],
-    tag: "Nuevo"
-  },
-  {
-    name: "Detox & Repair",
-    price: "190.000",
-    duration: "110 minutos",
-    description: "Limpieza profunda, hidratación con electroporador y masaje facial.",
-    includes: ["Extracción controlada", "Ácido hialurónico", "Drenaje linfático"],
+    name: "Glow Clean",
+    price: "80.000",
+    duration: "90 minutos",
+    description: "Limpieza+Hidratación",
+    includes: ["Diagnóstico facial", "Hidratación profunda", "Limpieza facial", "Sellado y protección"],
     tag: "Favorito"
   },
   {
-    name: "Post Quirúrgico 360°",
-    price: "370.000",
-    duration: "10 sesiones",
-    description: "Paquete sugerido en el catálogo para acompañamiento completo.",
-    includes: ["Fase inmediata", "Fase mediata", "Fase tardía"],
-    tag: "Paquete"
+    name: "Cacao Calm",
+    price: "70.000",
+    duration: "80 minutos",
+    description: "Chocolaterapia+Relajación",
+    includes: [
+      "Masaje facial manual",
+      "Chocolaterapia Facial",
+      "Cámara fotodinámica",
+      "Sellado y protección"
+    ],
+    tag: "Relajante"
+  },
+  {
+    name: "Skin & Lips Care",
+    price: "90.000",
+    duration: "50 minutos",
+    description: "Hidralips+Limpieza",
+    includes: ["Limpieza sencilla", "Hidralips", "Hidratación", "Sellado y protección"],
+    tag: "Nuevo"
   }
 ];
 

@@ -629,6 +629,11 @@ h4 {
 }
 
 @media (max-width: 880px) {
+  .main-nav {
+    position: relative;
+    z-index: 200;
+  }
+
   .main-nav ul {
     position: absolute;
     top: 72px;
