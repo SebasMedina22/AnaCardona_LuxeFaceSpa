@@ -118,7 +118,7 @@ a {
   height: clamp(72px, 6vw, 88px);
   max-width: 320px;
   overflow: hidden;
-  padding: 6px 0;
+  padding: 6px 0 6px 0.5rem;
 }
 
 .main-nav .brand img {
@@ -650,6 +650,16 @@ h4 {
 }
 
 @media (max-width: 600px) {
+  .hero {
+    padding-left: 1.25rem;
+    padding-right: 1.25rem;
+  }
+
+  .main-nav .brand {
+    overflow: visible;
+    padding-left: 0.75rem;
+  }
+
   :root {
     --logo-zoom: 1.2;
   }
