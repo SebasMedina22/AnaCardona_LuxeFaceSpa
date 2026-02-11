@@ -66,48 +66,25 @@ const servicesData = [
     services: [
       {
         name: "Limpieza básica",
-        price: "40.000",
-        duration: "40 minutos",
-        summary: "Remueve suciedad superficial y prepara la piel para tratamientos.",
-        details: buildDetails({
-          aparatologia: [
-            "Leche limpiadora botánica",
-            "Tónico de hamamelis",
-            "Luz LED verde calmante"
-          ],
-          cuidadosPrevios: [
-            "Evitar maquillaje a prueba de agua 24h antes",
-            "Suspender exfoliantes químicos 3 días antes"
-          ],
-          cuidadosPosteriores: ["No exfoliar por 48h", "Aplicar crema hidratante ligera mañana y noche"],
-          candidatos: ["Pieles jóvenes o normales", "Clientes que buscan mantenimiento mensual"],
-          contraindicaciones: ["Dermatitis activa", "Heridas abiertas"],
-          beneficios: [
-            "Elimina residuos superficiales",
-            "Mejora la absorción de activos",
-            "Sensación de frescura inmediata"
-          ]
-        })
-      },
-      {
-        name: "Limpieza básica con vapor",
         price: "55.000",
-        duration: "45 minutos",
-        summary: "Abre poros y facilita la remoción de impurezas.",
+        duration: "60 minutos",
+        summary: "Elimina impurezas, limpia los poros en profundidad y deja la piel renovada.",
         details: buildDetails({
-          aparatologia: [
-            "Vaporizador de ozono",
-            "Alta frecuencia puntual",
-            "Mascarilla descongestiva"
+          aparatologia: ["Vapor-Ozono", "Peeling Ultrasonico", "Alta frecuencia"],
+          cuidadosPrevios: [
+            "Evitar maquillaje a prueba de agua 24 horas antes",
+            "Suspender exfoliaciones 3 días antes"
           ],
-          cuidadosPrevios: ["No broncearse dos días antes", "Mantener buena hidratación"],
-          cuidadosPosteriores: [
-            "Evitar maquillaje pesado durante 12h",
-            "Usar agua termal 3 veces al día"
+          candidatos: [
+            "Usuarios que tienen puntos negros y comedones de moderados a visibles.",
+            "Usuarios que presentan poros dilatados y acumulación de sebo.",
+            "Usuarios que desean realizarse mantenimiento cada mes"
           ],
-          candidatos: ["Pieles mixtas congestionadas", "Personas con puntos negros superficiales"],
-          contraindicaciones: ["Rosácea activa", "Asma no controlada"],
-          beneficios: ["Ablanda comedones", "Rostro más uniforme", "Reduce puntos negros"]
+          contraindicaciones: [
+            "Piel muy sensible o reactiva.",
+            "Rosácea, cuperosis o telangiectasias.",
+            "Dermatitis o inflamación activa."
+          ]
         })
       },
       {
@@ -117,21 +94,30 @@ const servicesData = [
         summary: "Extracción completa, desincrustación profunda y luminosidad.",
         details: buildDetails({
           aparatologia: [
-            "Peeling ultrasónico",
-            "Extractor eléctrico controlado",
-            "Mascarilla de arcilla medicada"
+            "Vapor-Ozono",
+            "Peeling Ultrasonico",
+            "Cámara fotodinamica",
+            "Alta frecuencia",
+            "Crioterapia"
           ],
           cuidadosPrevios: [
-            "Suspender isotretinoína tópica 7 días antes",
-            "Informar si hubo toxina o rellenos recientes"
+            "Evitar maquillaje a prueba de agua 24 horas antes",
+            "Suspender exfoliaciones 3 días antes"
           ],
-          cuidadosPosteriores: [
-            "No tocar el rostro con manos sucias",
-            "Cambiar la funda de almohada esa noche"
+          candidatos: [
+            "Usuarios con poros dilatados, puntos negros y comedones profundos.",
+            "Usuarios que requieren una limpieza profunda y desintoxicante.",
+            "Acné comedoniano o acné leve (no inflamatorio).",
+            "Usuarios con exceso de sebo y brillo constante.",
+            "Usuarios que buscan resultados más visibles en una sola sesión."
           ],
-          candidatos: ["Pieles grasas o con brotes", "Clientes con más de 6 semanas sin limpieza"],
-          contraindicaciones: ["Acné quístico severo", "Tratamientos dermatológicos agresivos recientes"],
-          beneficios: ["Poros visiblemente más limpios", "Textura afinada", "Controla el brillo"]
+          contraindicaciones: [
+            "Piel sensible, reactiva o con rosácea.",
+            "Dermatitis, eccema o brotes inflamatorios activos.",
+            "Acné inflamatorio severo.",
+            "Pacientes con contraindicaciones para aparatología (marcapasos, epilepsia no controlada, etc.).",
+            "Post procedimientos estéticos recientes sin autorización."
+          ]
         })
       }
     ]
@@ -140,59 +126,66 @@ const servicesData = [
     category: "Hidrataciones",
     services: [
       {
-        name: "Hidratación profunda",
+        name: "Hidratación",
         price: "65.000",
         duration: "45 minutos",
         summary: "Aporta hidratación intensa, suaviza textura y calma irritación.",
         details: buildDetails({
-          aparatologia: [
-            "Serum multipeso de ácido hialurónico",
-            "Máscara hidroplástica",
-            "LED azul calmante"
+          aparatologia: ["Cámara fotodinamica", "Alta Frecuencia"],
+          cuidadosPrevios: [
+            "Evitar maquillaje a prueba de agua 24 horas antes",
+            "Suspender exfoliaciones 3 días antes"
           ],
-          cuidadosPrevios: ["Evitar sauna el mismo día", "Consumir agua suficiente"],
-          cuidadosPosteriores: [
-            "Aplicar protector solar cada 3h",
-            "No usar maquillaje hasta la mañana siguiente"
+          candidatos: [
+            "Sensación de tirantez, opacidad o descamación leve.",
+            "Piel apagada, sin luminosidad.",
+            "Usuarios que buscan resultados inmediatos de suavidad y glow.",
+            "Piel sensible leve (bien tolerada).",
+            "Usuarios que han tenido exposición solar, aire acondicionado o cambios climáticos.",
+            "Recomendado como mantenimiento o complemento de otros tratamientos."
           ],
-          candidatos: ["Pieles deshidratadas por clima o viajes", "Personas bajo tratamientos despigmentantes"],
-          contraindicaciones: ["Alergia a alginatos", "Heridas abiertas o infecciones"],
-          beneficios: ["Rostro repulpado", "Calma rojeces", "Sensación de confort inmediata"]
+          contraindicaciones: [
+            "Infecciones cutáneas activas.",
+            "Heridas abiertas.",
+            "Dermatitis, eccema o reacciones alérgicas activas.",
+            "Acné inflamatorio activo.",
+            "Rosácea activa"
+          ]
         })
       },
       {
-        name: "Hidratación con principio activo (Electroporador)",
-        price: "55.000",
+        name: "Hidratación Profunda Dermapen",
+        price: "90.000",
         duration: "60 minutos",
-        summary: "Ácido hialurónico o hidraflash para resultados prolongados.",
+        summary: "Tratamiento con microagujas para hidratación profunda y luminosidad inmediata.",
         details: buildDetails({
-          aparatologia: ["Electroporador médico", "Ampollas HA + B5", "Crioterapia suave"],
-          cuidadosPrevios: ["Evitar retinoides 48h antes", "No consumir alcohol 24h previas"],
-          cuidadosPosteriores: [
-            "No tocar el rostro durante 2h",
-            "Continuar con serum hidratante de uso diario"
+          aparatologia: ["Dermapen"],
+          cuidadosPrevios: [
+            "Evitar exposición solar directa al menos 5 a 7 días antes",
+            "No usar ácidos, retinoides o exfoliantes 3 a 5 días previos",
+            "No realizar peelings, láser u otros tratamientos agresivos 15 días antes",
+            "No asistir con la piel irritada o lesionada",
+            "Evitar automedicación tópica o sistémica antes del procedimiento",
+            "Informar si se están consumiendo medicamentos o tratamientos dermatológicos"
           ],
-          candidatos: ["Pieles maduras con líneas finas", "Clientes después de limpiezas intensas"],
-          contraindicaciones: ["Portadores de marcapasos", "Gestantes sin autorización médica"],
-          beneficios: ["Activos penetran a dermis media", "Líneas menos visibles", "Glow por 7 días"]
-        })
-      },
-      {
-        name: "Limpieza + hidratación",
-        price: "80.000",
-        duration: "90 minutos",
-        summary: "Sesión combinada para una piel más luminosa y renovada.",
-        details: buildDetails({
-          aparatologia: [
-            "Vaporizador herbal",
-            "Peeling ultrasónico ligero",
-            "Infusión de activos con máscara fría"
+          candidatos: [
+            "Piel deshidratada, opaca o con aspecto cansado",
+            "Líneas finas por deshidratación",
+            "Piel tirante o áspera",
+            "Desean un tratamiento con resultados inmediatos",
+            "Son ideales como tratamiento de mantenimiento o previo a eventos"
           ],
-          cuidadosPrevios: ["Mantenerse hidratado", "No programar depilaciones faciales cercanas"],
-          cuidadosPosteriores: ["Evitar gimnasio 24h", "Dormir sobre funda limpia"],
-          candidatos: ["Pieles apagadas con congestión ligera", "Clientes antes de eventos especiales"],
-          contraindicaciones: ["Brotes severos", "Procesos virales activos"],
-          beneficios: ["Poros limpios y piel jugosa", "Resultados inmediatos", "Una sola sesión integral"]
+          contraindicaciones: [
+            "Embarazo o lactancia",
+            "Infecciones activas en la piel",
+            "Acné activo",
+            "Dermatitis, rosácea activa o piel muy sensibilizada",
+            "Heridas abiertas, irritaciones o lesiones recientes",
+            "Uso reciente de isotretinoína (menos de 6 meses)",
+            "Enfermedades autoinmunes no controladas",
+            "Tendencia a cicatrices queloides",
+            "Tratamientos dermatológicos agresivos recientes (láser, peelings profundos)"
+          ]
         })
       }
     ]
@@ -203,62 +196,191 @@ const servicesData = [
       {
         name: "Acné",
         price: "90.000",
-        duration: "Sesión · Plan 4 semanas: 320.000",
+        duration: "90 - 120 minutos",
         summary: "Controla brotes, reduce inflamación y mejora textura.",
+        pricePackages: {
+          single: { label: "Precio por sesión única", amount: "80.000" },
+          packages: [{ sessions: 4, total: "320.000", perUnit: "70.000" }]
+        },
         details: buildDetails({
           aparatologia: [
-            "Luz azul antibacteriana",
-            "Alta frecuencia focalizada",
-            "Mascarilla purificante de azufre"
+            "Vapor ozono",
+            "Peeling Ultrasonico",
+            "Cámara fotodinámica",
+            "Crioterapia",
+            "Alta Frecuencia"
           ],
-          cuidadosPrevios: ["Traer lista de medicamentos actuales", "No extraer espinillas 72h antes"],
-          cuidadosPosteriores: ["Usar gel calmante de aloe", "Evitar lácteos grasos 24h posteriores"],
-          candidatos: ["Acné grado I-II", "Pacientes acompañados por dermatólogo"],
-          contraindicaciones: ["Acné noduloquístico severo", "Uso de isotretinoína oral en dosis altas"],
-          beneficios: ["Disminuye inflamación", "Seca brotes activos", "Favorece cicatrización"]
+          cuidadosPrevios: [
+            "No asistir con maquillaje",
+            "Evitar exfoliaciones físicas o químicas 3–5 días antes.",
+            "No haber usado retinoides, isotretinoína tópica o peróxido de benzoilo 48–72 horas previas.",
+            "No manipular ni exprimir lesiones días antes.",
+            "Informar si está usando medicación dermatológica o presenta brotes inflamatorios activos."
+          ],
+          candidatos: [
+            "Pieles con acné leve a moderado.",
+            "Presencia de comedones abiertos y cerrados.",
+            "Piel grasa o seborreica.",
+            "Pieles con poros dilatados.",
+            "Acné con inflamación controlada (no severa).",
+            "Personas que buscan regular la producción de sebo y mejorar la textura de la piel.",
+            "Pieles con tendencia acneica que requieren mantenimiento facial profundo."
+          ],
+          contraindicaciones: [
+            "Acné quístico o noduloquístico.",
+            "Lesiones abiertas, infectadas o con supuración activa.",
+            "Piel con dermatitis, rosácea activa o eczema.",
+            "Herpes simple activo.",
+            "Embarazo.",
+            "Uso reciente de isotretinoína oral (mínimo 6 meses)."
+          ]
         })
       },
       {
         name: "Anti-age",
         price: "80.000",
-        duration: "Sesión · Plan 4 semanas: 280.000",
-        summary: "Estimula colágeno y suaviza líneas de expresión.",
-        details: buildDetails({
-          aparatologia: ["Radiofrecuencia bipolar", "Masaje kobido", "Luz LED ámbar"],
-          cuidadosPrevios: ["Hidratar la piel el día previo", "Evitar peelings profundos 1 semana antes"],
-          cuidadosPosteriores: ["Aplicar serum antioxidante", "Dormir boca arriba esa noche"],
-          candidatos: ["Pieles a partir de los 30", "Personas con líneas marcadas"],
-          contraindicaciones: ["Implantes metálicos incompatibles", "Enfermedades autoinmunes activas"],
-          beneficios: ["Estimula colágeno", "Mejora firmeza", "Ilumina el rostro"]
-        })
+        duration: "60 minutos",
+        summary:
+          "Tratamiento realizado con Dermapen, estimulando la regeneración celular y la producción de colágeno y elastina.",
+        pricePackages: {
+          single: { label: "Precio por sesión única", amount: "80.000" },
+          packages: [
+            { sessions: 3, total: "225.000", perUnit: "75.000" },
+            { sessions: 6, total: "420.000", perUnit: "70.000" }
+          ]
+        },
+        allowedDetails: ["paraQueFunciona", "principiosActivos", "contraindicaciones", "cuidadosPrevios"],
+        details: {
+          paraQueFunciona: [
+            "Atenúa líneas de expresión y arrugas finas",
+            "Mejora la firmeza y elasticidad de la piel",
+            "Unifica el tono",
+            "Mejora la textura y luminosidad",
+            "Rejuvenece visiblemente la piel"
+          ],
+          principiosActivos: ["Ácido hialuronico", "Peptidos", "Antioxidantes"],
+          contraindicaciones: [
+            "Embarazo o lactancia",
+            "Infecciones activas en la piel.",
+            "Acné activo inflamatorio",
+            "Dermatitis, rosácea activa o piel muy sensibilizada",
+            "Heridas abiertas, irritaciones o lesiones recientes",
+            "Uso reciente de isotretinoína (menos de 6 meses)",
+            "Enfermedades autoinmunes no controladas",
+            "Tendencia a cicatrices queloides",
+            "Tratamientos dermatológicos agresivos recientes (peelings profundos, láser)"
+          ],
+          cuidadosPrevios: [
+            "Evitar exposición solar directa al menos 5 a 7 días antes",
+            "No usar ácidos, retinoides o exfoliantes 3 a 5 días previos",
+            "No realizar peelings, láser u otros tratamientos agresivos 15 días antes",
+            "Mantener la piel hidratada y limpia",
+            "No asistir con la piel irritada o lesionada",
+            "Evitar automedicación tópica o sistémica antes del procedimiento",
+            "Informar si se están consumiendo medicamentos o tratamientos dermatológicos"
+          ]
+        }
       },
       {
-        name: "Anti-age con principio activo (Electroporador)",
-        price: "90.000",
-        duration: "Sesión · Plan 4 semanas: 340.000",
-        summary: "B.T.X + ácido hialurónico para un efecto rejuvenecedor visible.",
-        details: buildDetails({
-          aparatologia: ["Electroporador avanzado", "Coctel B.T.X cosmético + HA", "Masaje drenante"],
-          cuidadosPrevios: ["Suspender aspirina 48h antes", "Evitar solar 72h previas"],
-          cuidadosPosteriores: ["No masajear la zona por 24h", "Aplicar protector solar mineral"],
-          candidatos: ["Pieles maduras finas", "Quienes desean efecto lifting sin agujas"],
-          contraindicaciones: ["Embarazo", "Alergia a toxina botulínica cosmética"],
-          beneficios: ["Rellena líneas finas", "Efecto tensor inmediato", "Mejora contorno facial"]
-        })
+        name: "Cicatrices post acné",
+        price: "75.000",
+        duration: "60 minutos",
+        summary:
+          "Tratamiento con Dermapen, estimula la regeneración de la piel y mejora cicatrices causadas por el acné",
+        pricePackages: {
+          single: { label: "Precio por sesión única", amount: "75.000" },
+          packages: [
+            { sessions: 3, total: "210.000", perUnit: "70.000" },
+            { sessions: 6, total: "408.000", perUnit: "68.000" }
+          ]
+        },
+        allowedDetails: ["paraQueFunciona", "principiosActivos", "contraindicaciones", "cuidadosPrevios"],
+        details: {
+          paraQueFunciona: [
+            "Atenúa cicatrices atróficas (hundidas)",
+            "Mejora la textura irregular de la piel",
+            "Estimula colágeno y elastina",
+            "Unifica la superficie cutánea",
+            "Mejora el aspecto general de la piel"
+          ],
+          principiosActivos: [
+            "Ácido hialurónico",
+            "Péptidos",
+            "Factores de crecimiento",
+            "Vitaminas regeneradoras",
+            "Centella asiática"
+          ],
+          contraindicaciones: [
+            "Acné activo inflamatorio",
+            "Infecciones cutáneas activas",
+            "Heridas abiertas o costras",
+            "Queloides o tendencia a cicatrices hipertróficas",
+            "Enfermedades autoinmunes no controladas",
+            "Embarazo o lactancia",
+            "Uso reciente de isotretinoína (menos de 6 meses)",
+            "Piel extremadamente sensible o con procesos inflamatorios activos"
+          ],
+          cuidadosPrevios: [
+            "Evitar exposición solar directa al menos 5 a 7 días antes",
+            "No usar ácidos, retinoides o exfoliantes 3 a 5 días previos",
+            "No realizar peelings, láser u otros tratamientos agresivos 15 días antes",
+            "Mantener la piel hidratada y limpia",
+            "No asistir con la piel irritada o lesionada",
+            "Evitar automedicación tópica o sistémica antes del procedimiento",
+            "Informar si se están consumiendo medicamentos o tratamientos dermatológicos"
+          ]
+        }
       },
       {
-        name: "Pigmentaciones",
+        name: "Anti manchas",
         price: "80.000",
-        duration: "Sesión · Plan 4 semanas: 280.000",
-        summary: "Aclara manchas, unifica el tono y reduce marcas post acné.",
-        details: buildDetails({
-          aparatologia: ["Peeling enzimático de papaína", "LED violeta", "Mascarilla de niacinamida"],
-          cuidadosPrevios: ["Suspender autobronceadores 1 semana antes", "No depilar el rostro 3 días antes"],
-          cuidadosPosteriores: ["Reaplicar bloqueador cada 2h", "Usar sombrero si hay sol intenso"],
-          candidatos: ["Pieles con manchas post inflamatorias", "Melasma controlado"],
-          contraindicaciones: ["Dermatitis perioral", "Tratamientos láser recientes"],
-          beneficios: ["Tono más uniforme", "Disminuye manchas recientes", "Aporta luminosidad"]
-        })
+        duration: "60 minutos",
+        summary:
+          "Tratamiento realizado con Dermapen, renueva la piel y mejora manchas producidas por el sol, hormonas o procesos inflamatorios.",
+        pricePackages: {
+          single: { label: "Precio por sesión única", amount: "80.000" },
+          packages: [
+            { sessions: 4, total: "300.000", perUnit: "75.000" },
+            { sessions: 6, total: "420.000", perUnit: "70.000" }
+          ]
+        },
+        allowedDetails: ["paraQueFunciona", "principiosActivos", "contraindicaciones", "cuidadosPrevios"],
+        details: {
+          paraQueFunciona: [
+            "Atenúa manchas y melasma",
+            "Unifica el tono de la piel",
+            "Mejora la luminosidad",
+            "Regula la producción de melanina",
+            "Mejora la textura de la piel"
+          ],
+          principiosActivos: [
+            "Ácido tranexámico",
+            "Niacinamida",
+            "Vitamina C",
+            "Ácido kójico",
+            "Alfa arbutina",
+            "Antioxidantes"
+          ],
+          contraindicaciones: [
+            "Embarazo o lactancia",
+            "Infecciones activas en la piel",
+            "Acné activo severo",
+            "Dermatitis, rosácea activa o piel muy sensibilizada",
+            "Heridas abiertas o lesiones recientes",
+            "Uso reciente de isotretinoína (menos de 6 meses)",
+            "Tendencia a hiperpigmentación post inflamatoria sin control previo",
+            "Exposición solar reciente o bronceado activo"
+          ],
+          cuidadosPrevios: [
+            "Evitar exposición solar directa al menos 5 a 7 días antes",
+            "No usar ácidos, retinoides o exfoliantes 3 a 5 días previos",
+            "No realizar peelings, láser u otros tratamientos agresivos 15 días antes",
+            "Mantener la piel hidratada y limpia",
+            "No asistir con la piel irritada o lesionada",
+            "Evitar automedicación tópica o sistémica antes del procedimiento",
+            "Informar si se están consumiendo medicamentos o tratamientos dermatológicos"
+          ]
+        }
       }
     ]
   },
@@ -271,12 +393,30 @@ const servicesData = [
         duration: "60 minutos",
         summary: "Reduce inflamación y mejora la circulación.",
         details: buildDetails({
-          aparatologia: ["Maniobras manuales suaves", "Rodillos de cuarzo frío"],
-          cuidadosPrevios: ["Beber agua antes de la sesión", "Evitar comidas muy saladas ese día"],
-          cuidadosPosteriores: ["Continuar hidratación el resto del día", "Realizar respiraciones profundas"],
-          candidatos: ["Personas con retención de líquidos facial", "Pacientes post operatorios autorizados"],
-          contraindicaciones: ["Infecciones activas", "Problemas cardíacos no controlados"],
-          beneficios: ["Rostro desinflamado", "Facilita recuperación post quirúrgica", "Sensación relajante"]
+          aparatologia: ["Cámara fotodinamica en color amarillo"],
+          cuidadosPrevios: [
+            "Buena hidratación el día previo y el día del tratamiento.",
+            "Evitar alcohol y exceso de sal 24 horas antes."
+          ],
+          candidatos: [
+            "Usuarios que presentan retención de líquidos y sensación de rostro inflamado.",
+            "Edema facial leve a moderado.",
+            "Usuarios que despiertan con el rostro hinchado o con bolsas marcadas.",
+            "Ojeras congestivas.",
+            "Usuarios que desean mejorar la circulación y oxigenación de la piel.",
+            "Usuarios que buscan un tratamiento relajante, desinflamante y no invasivo.",
+            "Personas con estrés, bruxismo o tensión facial.",
+            "Recomendado como tratamiento de mantenimiento y bienestar facial."
+          ],
+          contraindicaciones: [
+            "Infecciones agudas o fiebre.",
+            "Enfermedades linfáticas activas.",
+            "Trombosis, flebitis o problemas circulatorios severos.",
+            "Insuficiencia cardíaca o renal no controlada.",
+            "Cáncer activo o en tratamiento.",
+            "Hipertensión no controlada.",
+            "Heridas abiertas o lesiones recientes."
+          ]
         })
       },
       {
@@ -285,12 +425,31 @@ const servicesData = [
         duration: "60 minutos",
         summary: "Tonifica músculos faciales y reduce tensión.",
         details: buildDetails({
-          aparatologia: ["Gua Sha de jade", "Ventosas faciales suaves", "Masaje miofascial"],
-          cuidadosPrevios: ["Evitar cafeína fuerte 2h antes", "Llegar sin maquillaje"],
-          cuidadosPosteriores: ["Practicar ejercicios respiratorios en casa", "Hidratar labios y contorno"],
-          candidatos: ["Personas con tensión mandibular", "Usuarios de pantallas prolongadas"],
-          contraindicaciones: ["Cirugías recientes menores a 4 semanas", "Lesiones musculares faciales"],
-          beneficios: ["Mayor tonicidad", "Relaja cuello y hombros", "Define el óvalo facial"]
+          cuidadosPrevios: [
+            "Evitar procedimientos faciales invasivos (peelings, dermapen, toxina, rellenos) en los 7–15 días previos, según el caso.",
+            "Mantener buena hidratación antes del tratamiento."
+          ],
+          candidatos: [
+            "Usuarios que buscan una tonificación facial natural.",
+            "Usuarios con tensión muscular facial (mandíbula, ceño, cuello).",
+            "Usuarios que sufren de bruxismo leve o estrés facial.",
+            "Usuarios que desean mejorar la circulación y oxigenación de la piel.",
+            "Rostro cansado o apagado.",
+            "Usuarios que buscan un tratamiento no invasivo y consciente.",
+            "Personas que desean prevención del envejecimiento.",
+            "Ideal como tratamiento de bienestar y relajación.",
+            "Usuarios que no desean aparatología estética."
+          ],
+          contraindicaciones: [
+            "Infecciones cutáneas activas.",
+            "Dermatitis, eccema o reacciones alérgicas activas.",
+            "Heridas abiertas.",
+            "Acné inflamatorio severo.",
+            "Cirugías faciales recientes sin autorización médica.",
+            "Dolor facial agudo o patologías musculares severas.",
+            "Neuralgias faciales activas.",
+            "Fracturas faciales recientes."
+          ]
         })
       },
       {
@@ -299,12 +458,30 @@ const servicesData = [
         duration: "60 minutos",
         summary: "Nutre profundamente y aporta luminosidad natural.",
         details: buildDetails({
-          aparatologia: ["Mousse tibio de cacao", "Pinceles de seda", "Masaje con piedras calientes"],
-          cuidadosPrevios: ["Evitar perfumes fuertes antes", "No consumir chocolate previo al servicio"],
-          cuidadosPosteriores: ["No enjuagar la piel durante 4h", "Aplicar crema nutritiva al acostarse"],
-          candidatos: ["Pieles secas", "Amantes de servicios sensoriales"],
-          contraindicaciones: ["Alergia al cacao", "Dermatitis seborreica activa"],
-          beneficios: ["Aporta antioxidantes", "Deja piel sedosa", "Eleva el ánimo"]
+          aparatologia: ["Cámara fotodinámica"],
+          cuidadosPrevios: [
+            "Evitar maquillaje a prueba de agua 24 horas antes",
+            "Suspender exfoliaciones 3 días antes",
+            "No realizar depilación facial (cera, hilo, láser) 5–7 días antes."
+          ],
+          candidatos: [
+            "Piel normal, seca o mixta.",
+            "Piel deshidratada o apagada.",
+            "Usuarios que buscan un tratamiento relajante y sensorial.",
+            "Usuarios que desean mejorar la suavidad y luminosidad de la piel.",
+            "Usiarios que quieren aportar antioxidantes a la piel.",
+            "Usuarios que presentan estrés, fatiga o tensión facial.",
+            "Usuarios que buscan una experiencia de spa facial.",
+            "Recomendado antes de eventos para un efecto glow y descanso."
+          ],
+          contraindicaciones: [
+            "Alergia o hipersensibilidad al cacao.",
+            "Dermatitis activa",
+            "Infecciones cutáneas activas.",
+            "Heridas abiertas.",
+            "Acné inflamatorio activo.",
+            "Rosácea activa."
+          ]
         })
       }
     ]
@@ -317,48 +494,56 @@ const servicesData = [
         price: "60.000",
         duration: "1 sesión semanal · 2 semanas",
         summary: "Reduce inflamación, acelera recuperación y mejora drenaje.",
-        details: buildDetails({
-          aparatologia: ["Ultrasonido pulsado", "Compresas frías", "Láser frío"],
-          cuidadosPrevios: ["Traer recomendación del cirujano", "Evitar analgésicos no recetados"],
-          cuidadosPosteriores: ["Mantener uso de faja", "Dormir con la cabeza elevada"],
-          candidatos: ["Pacientes en los primeros 7-10 días post cirugía", "Personas con edema marcado"],
-          contraindicaciones: ["Fiebre", "Infección en la zona tratada"],
-          beneficios: ["Disminuye inflamación", "Acelera drenaje", "Aporta alivio inmediato"]
-        })
+        allowedDetails: ["aparatologia", "beneficios"],
+        details: {
+          aparatologia: ["Crioterapia"],
+          beneficios: [
+            "Disminuye la inflamación y el edema desde las primeras horas post procedimiento.",
+            "Favorece el drenaje de líquidos retenidos, ayudando a una recuperación más rápida.",
+            "Alivia la sensación de calor, tensión y molestia en la piel.",
+            "Mejora la circulación linfática, reduciendo el riesgo de fibrosis temprana.",
+            "Mantiene la piel limpia, calmada e hidratada sin agredirla.",
+            "Refuerza la barrera cutánea, evitando deshidratación e irritaciones."
+          ]
+        }
       },
       {
         name: "Fase mediata",
         price: "40.000",
         duration: "1-2 sesiones semanales · 2 semanas",
         summary: "Mejora cicatrización, reduce fibrosis y moldea.",
-        details: buildDetails({
-          aparatologia: ["Radiofrecuencia controlada", "Masaje cicatrizante", "Maderoterapia facial"],
-          cuidadosPrevios: ["Mantener hidratación alta", "No aplicar cremas calientes antes de la cita"],
-          cuidadosPosteriores: ["Continuar ejercicios enviados", "Registrar cambios para la próxima sesión"],
-          candidatos: ["Pacientes a partir de la 2ª semana", "Quienes necesitan moldear fibrosis"],
-          contraindicaciones: ["Dolor agudo persistente", "Hipersensibilidad extrema"],
-          beneficios: ["Suaviza fibrosis", "Activa circulación", "Mejora textura"]
-        })
+        allowedDetails: ["aparatologia", "beneficios"],
+        details: {
+          aparatologia: ["Crioterapia", "Cámara fotodinámica"],
+          beneficios: [
+            "Estimula la regeneración celular y tisular, favoreciendo una cicatrización más rápida y ordenada.",
+            "Reduce edema residual y congestión linfática, evitando endurecimientos del tejido.",
+            "Mejora la oxigenación de la piel, acelerando los procesos de reparación.",
+            "Disminuye enrojecimiento, sensibilidad y molestias post operatorias.",
+            "Ayuda a prevenir fibrosis y adherencias tempranas.",
+            "Aporta efecto antiinflamatorio y descongestivo.",
+            "Mejora la textura, elasticidad y aspecto general de la piel.",
+            "Favorece una recuperación estética progresiva y segura."
+          ]
+        }
       },
       {
         name: "Fase tardía",
         price: "60.000",
         duration: "1 sesión cada 15-30 días",
         summary: "Suaviza cicatrices y estimula recuperación final.",
-        details: buildDetails({
-          aparatologia: ["Luz infrarroja suave", "Masaje remodelante", "Máscara nutritiva reparadora"],
-          cuidadosPrevios: [
-            "Comunicar si hubo retoques recientes",
-            "Evitar anticoagulantes 48h antes de la sesión"
-          ],
-          cuidadosPosteriores: [
-            "Aplicar gel de silicona sobre cicatrices",
-            "Programar sesión de mantenimiento mensual"
-          ],
-          candidatos: ["Pacientes después de la semana 6", "Personas que buscan mantener resultados"],
-          contraindicaciones: ["Cicatrices abiertas", "Descompensaciones médicas"],
-          beneficios: ["Textura uniforme", "Cicatrices más planas", "Bienestar global"]
-        })
+        allowedDetails: ["aparatologia", "beneficios"],
+        details: {
+          aparatologia: ["Crioterapia", "Cámara fotodinámica", "Electroporador"],
+          beneficios: [
+            "Acelera la regeneración tisular profunda, optimizando la calidad de la cicatriz.",
+            "Contribuye a la rehidratación intensiva de la piel en recuperación.",
+            "Favorece la normalización del tejido cutáneo, mejorando firmeza y uniformidad.",
+            "Potencia la acción antiinflamatoria y calmante de los activos utilizados.",
+            "Ayuda a mejorar la elasticidad y resistencia de la piel post quirúrgica.",
+            "Optimiza los resultados del tratamiento, logrando una recuperación más eficiente y visible."
+          ]
+        }
       }
     ]
   }
@@ -366,16 +551,22 @@ const servicesData = [
 
 const testimonialsData = [
   {
-    name: "Cliente feliz",
-    text: "“Coloca aquí la primera reseña cuando la tengas. El módulo ya respeta tipografía y colores.”"
+    name: "Cliente 1",
+    text: "“Próximamente reseñas de nuestros clientes.”",
+    src: "images/Paciente 1.jpeg",
+    alt: "Paciente en tratamiento facial"
   },
   {
-    name: "Testimonio 2",
-    text: "“Puedes incluir antes y después, o un breve resumen del proceso vivido en cabina.”"
+    name: "Cliente 2",
+    text: "“Próximamente reseñas de nuestros clientes.”",
+    src: "images/Paciente 2.jpeg",
+    alt: "Paciente durante sesión de cuidado facial"
   },
   {
-    name: "Testimonio 3",
-    text: "“El carrusel acepta cualquier cantidad de reseñas y se ajusta automáticamente.”"
+    name: "Cliente 3",
+    text: "“Próximamente reseñas de nuestros clientes.”",
+    src: "images/Paciente 3.jpeg",
+    alt: "Paciente en cabina recibiendo tratamiento"
   }
 ];
 
@@ -401,11 +592,14 @@ const galleryData = [
 const detailLabels = {
   aparatologia: "Aparatología",
   cuidadosPrevios: "Cuidados previos",
-  cuidadosPosteriores: "Cuidados posteriores",
   candidatos: "Candidatos ideales",
   contraindicaciones: "Contraindicaciones",
+  paraQueFunciona: "Para que funciona",
+  principiosActivos: "Principios activos utilizados",
   beneficios: "Beneficios"
 };
+
+const defaultDetailKeys = ["aparatologia", "cuidadosPrevios", "candidatos", "contraindicaciones"];
 
 const clamp = (value, min, max) => Math.min(Math.max(value, min), max);
 
@@ -460,11 +654,53 @@ const createServiceCard = (service) => {
   summary.textContent = service.summary;
   textBlock.append(title, summary);
 
-  const chip = document.createElement("div");
-  chip.className = "price-chip";
-  chip.textContent = `$${service.price}`;
+  let priceBlock;
+  if (service.pricePackages) {
+    priceBlock = document.createElement("div");
+    priceBlock.className = "service-price";
 
-  header.append(textBlock, chip);
+    const singleRow = document.createElement("div");
+    singleRow.className = "service-price-row";
+
+    const singleLeft = document.createElement("div");
+    singleLeft.className = "service-price-left";
+    singleLeft.textContent = "1 sesión";
+
+    const singleChip = document.createElement("div");
+    singleChip.className = "price-chip service-price-chip";
+    singleChip.textContent = `$${service.pricePackages.single.amount}`;
+
+    singleRow.append(singleLeft, singleChip);
+
+    const packagesList = document.createElement("div");
+    packagesList.className = "service-price-packages";
+    service.pricePackages.packages.forEach((pkg) => {
+      const row = document.createElement("div");
+      row.className = "service-price-row";
+
+      const left = document.createElement("div");
+      left.className = "service-price-left";
+      left.innerHTML = `
+        <span class="service-price-title">${pkg.sessions} sesiones</span>
+        <span class="service-price-sub">$${pkg.perUnit} c/u</span>
+      `;
+
+      const chip = document.createElement("div");
+      chip.className = "price-chip service-price-chip";
+      chip.textContent = `$${pkg.total}`;
+
+      row.append(left, chip);
+      packagesList.appendChild(row);
+    });
+
+    priceBlock.append(singleRow, packagesList);
+  } else {
+    priceBlock = document.createElement("div");
+    priceBlock.className = "price-chip";
+    priceBlock.textContent = `$${service.price}`;
+  }
+
+  header.append(textBlock, priceBlock);
 
   const meta = document.createElement("p");
   meta.className = "service-meta";
@@ -472,14 +708,21 @@ const createServiceCard = (service) => {
 
   const details = document.createElement("details");
   const summaryToggle = document.createElement("summary");
-  summaryToggle.textContent = "Ver aparatología, cuidados y beneficios";
+  const allowedKeys = service.allowedDetails ?? defaultDetailKeys;
+  const summaryLabels = allowedKeys.map((key) => detailLabels[key]).filter(Boolean);
+  summaryToggle.textContent = summaryLabels.length
+    ? `Ver ${summaryLabels.join(", ").toLowerCase()}`
+    : "Ver detalles";
   details.appendChild(summaryToggle);
 
   const detailGrid = document.createElement("div");
   detailGrid.className = "detail-grid";
 
-  Object.entries(service.details).forEach(([key, value]) => {
-    detailGrid.appendChild(createDetailBlock(detailLabels[key] ?? key, value));
+  const detailKeys = allowedKeys;
+  detailKeys.forEach((key) => {
+    const value = service.details?.[key];
+    if (!value || !detailLabels[key]) return;
+    detailGrid.appendChild(createDetailBlock(detailLabels[key], value));
   });
 
   details.appendChild(detailGrid);
@@ -531,7 +774,13 @@ const renderTestimonials = () => {
   testimonialsData.forEach((item) => {
     const card = document.createElement("article");
     card.className = "testimonial-card";
-    card.innerHTML = `<p>${item.text}</p><strong>${item.name}</strong>`;
+    card.innerHTML = `
+      <img src="${item.src}" alt="${item.alt}" loading="lazy" decoding="async" />
+      <div class="testimonial-overlay">
+        <p>${item.text}</p>
+        <strong>${item.name}</strong>
+      </div>
+    `;
     container.appendChild(card);
   });
 };
